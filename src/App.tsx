@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {useFeed} from "@tribeplatform/react-sdk/hooks";
+import {simplifyPaginatedResult} from "@tribeplatform/react-sdk/utils";
+import {Post} from "@tribeplatform/gql-client/types";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const {data} = useFeed({
+        fields: 'basic',
+        variables: {
+            limit: 100,
+        }
+    })
+    const {nodes: posts} = simplifyPaginatedResult<Post>(data)
+
+    return (
+        <div className="w-3/4 m-auto flex flex-col gap-5">
+            {posts.map((post, i) => (
+                <div className="flex gap-2 bg-gray-100 rounded-lg p-2">
+                    <div>
+                        {i+1}.
+                    </div>
+                    <div>
+                        {post.title}
+                    </div>
+                </div>
+            ))}
+        </div>
+    );
 }
 
 export default App;
