@@ -10,7 +10,8 @@ ReactDOM.render(
     <React.StrictMode>
         <TribeProvider config={{
             baseUrl: 'https://app.tribe.so/graphql',
-            accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InBnSHFHMTlyaWIiLCJuZXR3b3JrSWQiOiJKQ0dvbTRDWjNLIiwibmV0d29ya0RvbWFpbiI6InJlYWN0LXNkay10dXRvcmlhbC50cmliZXBsYXRmb3JtLmNvbSIsInRva2VuVHlwZSI6IlVTRVIiLCJlbnRpdHlJZCI6bnVsbCwicGVybWlzc2lvbkNvbnRleHQiOm51bGwsInBlcm1pc3Npb25zIjpudWxsLCJzZXNzaW9uSWQiOiJ3M1ZxVE1MNjhsa0ZlYjJtQkdHbGN4eUk0RnVXOGV5Q3pNenozV2RBbTZCSXpQOERuZCIsImlhdCI6MTY0MjYxNDc2NiwiZXhwIjoxNjQ1MjA2NzY2fQ.Psdg6IqpcJl9Wx2XdqJi3SB8zRU2v6SvBCkFo4d0AMQ',
+            networkDomain: 'react-sdk-tutorial.tribeplatform.com',
+            accessToken: localStorage.getItem('apiKey')
         }}>
             <BrowserRouter>
                 <App/>
