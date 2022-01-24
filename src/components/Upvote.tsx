@@ -12,7 +12,7 @@ export const Upvote = (props: { post: Post }) => {
 
     return (
         <div className="flex flex-col justify-center">
-            <TriangleUpIcon width="16" height="16" fill={reacted ? "green" : "grey"} onClick={() => {
+            <TriangleUpIcon className="cursor-pointer" width="16" height="16" fill={reacted ? "green" : "grey"} onClick={() => {
                 reacted ?
                     downvote({
                         postId: post?.id,

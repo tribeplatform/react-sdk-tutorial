@@ -4,6 +4,7 @@ import {Post} from "@tribeplatform/gql-client/types";
 import {Link} from "react-router-dom";
 import {Upvote} from "./Upvote";
 import {useFeed} from "@tribeplatform/react-sdk/hooks";
+import {DeleteNews} from "./DeleteNews";
 
 function NewsList() {
     const {data} = useFeed({
@@ -13,7 +14,8 @@ function NewsList() {
                 variables: {
                     limit: 100,
                 }
-            }
+            },
+            authMemberProps: 'all',
         },
         variables: {
             limit: 100,
@@ -29,7 +31,7 @@ function NewsList() {
                         {i + 1}.
                     </div>
                     <Upvote post={post}/>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col flex-grow">
                         <Link to={`/${post.id}`}>
                             <div>
                                 {post.title}
@@ -39,6 +41,7 @@ function NewsList() {
                             {post.reactionsCount} upvotes
                         </div>
                     </div>
+                    <DeleteNews post={post} />
                 </div>
             ))}
         </div>
