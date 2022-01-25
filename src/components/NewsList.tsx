@@ -37,11 +37,16 @@ function NewsList() {
                                 {post.title}
                             </div>
                         </Link>
-                        <div className="text-xs text-gray-500">
-                            {post.reactionsCount} upvotes
+                        <div className="flex gap-2">
+                            <div className="text-xs text-gray-500">
+                                {post.reactionsCount} upvotes
+                            </div>
+                            <div className="text-xs text-gray-500">
+                                {post.repliesCount} comments
+                            </div>
                         </div>
                     </div>
-                    <DeleteNews post={post} />
+                    <DeleteNews post={post}/>
                 </div>
             ))}
         </div>
