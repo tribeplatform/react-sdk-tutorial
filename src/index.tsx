@@ -13,7 +13,7 @@ ReactDOM.render(
             networkDomain: 'react-sdk-tutorial.tribeplatform.com',
             accessToken: localStorage.getItem('apiKey')
         }}>
-            <BrowserRouter>
+            <BrowserRouter basename="/react-sdk-tutorial">
                 <App/>
             </BrowserRouter>
         </TribeProvider>
