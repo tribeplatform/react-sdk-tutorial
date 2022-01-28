@@ -16,6 +16,9 @@ function NewsList() {
                 }
             },
             authMemberProps: 'all',
+            createdBy: {
+                member: 'basic'
+            }
         },
         variables: {
             limit: 100,
@@ -24,9 +27,9 @@ function NewsList() {
     const {nodes: posts} = simplifyPaginatedResult<Post>(data)
 
     return (
-        <div className="w-3/4 m-auto flex flex-col gap-5">
+        <div className="lg:w-3/4 m-auto flex flex-col">
             {posts.map((post, i) => (
-                <div className="flex gap-2 bg-gray-100 rounded-lg p-2" key={post?.id}>
+                <div className="flex gap-2 bg-hacker-body p-2" key={post?.id}>
                     <div className="flex flex-col justify-center">
                         {i + 1}.
                     </div>
@@ -37,11 +40,16 @@ function NewsList() {
                                 {post.title}
                             </div>
                         </Link>
-                        <div className="flex gap-2">
-                            <div className="text-xs text-gray-500">
+                        <div className="flex gap-2 text-xs text-gray-500">
+                            <div>
+                                By {post.createdBy?.member?.name}
+                            </div>
+                            |
+                            <div>
                                 {post.reactionsCount} upvotes
                             </div>
-                            <div className="text-xs text-gray-500">
+                            |
+                            <div>
                                 {post.repliesCount} comments
                             </div>
                         </div>

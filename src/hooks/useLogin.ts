@@ -10,7 +10,7 @@ export const useLogin = () => {
             }
         ).then((token) => {
             localStorage.setItem('apiKey', token.accessToken)
-            window.location.href = '/'
+            window.location.href = '/react-sdk-tutorial'
         })
     }, [login])
 }
