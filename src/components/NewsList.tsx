@@ -12,7 +12,7 @@ function NewsList() {
             reactions: {
                 fields: 'all',
                 variables: {
-                    limit: 100,
+                    limit: 10,
                 }
             },
             authMemberProps: 'all',
@@ -21,7 +21,7 @@ function NewsList() {
             }
         },
         variables: {
-            limit: 100,
+            limit: 10,
         }
     })
     const {nodes: posts} = simplifyPaginatedResult<Post>(data)

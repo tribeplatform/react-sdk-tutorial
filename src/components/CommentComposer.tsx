@@ -10,7 +10,7 @@ export const CommentComposer = ({post}: { post?: Post }) => {
     return (
         <div>
             <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border lg:rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="text" placeholder="What's on your mind?" onChange={event => setText(event.target.value)} value={text}
             />
             <button

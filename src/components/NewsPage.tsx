@@ -25,8 +25,8 @@ export const NewsPage = () => {
     })
 
     return (
-        <div className="w-1/2 mx-auto">
-            <div className="rounded-lg bg-gray-100 p-5">
+        <div className="w-full lg:w-1/2 mx-auto my-5">
+            <div className="lg:rounded-lg bg-hacker-body p-5">
                 <div className="text-center text-2xl font-bold">
                     {post?.title}
                 </div>
