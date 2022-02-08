@@ -1986,10 +1986,22 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
-"@tribeplatform/gql-client@*", "@tribeplatform/gql-client@^1.0.4":
+"@tribeplatform/gql-client@*":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@tribeplatform/gql-client/-/gql-client-1.0.4.tgz#6e0b147473fdefebe7dd148295df7af74d240e9c"
   integrity sha512-yI+v8h+W2i4bcOUr9qo6/jv+Z73E4ADHuKjNrlnDYPeWHKFniuR8evbI3gB8a20/NBkiku7JW/Y0FBSxkAbGaw==
+  dependencies:
+    "@graphql-codegen/cli" "^1.21.7"
+    "@graphql-codegen/typescript" "^1.23.0"
+    graphql "^15.5.1"
+    graphql-request "^3.5.0"
+    graphql-tag "^2.11.0"
+    jwt-decode "^3.1.2"
+
+"@tribeplatform/gql-client@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@tribeplatform/gql-client/-/gql-client-1.0.5.tgz#2ee5c6f976ebf380a9fd52c80f2003bf4b7b7f32"
+  integrity sha512-RrTRjaBq+nbOsZ8YTQBJJ8IT8AvhHkLMxpRPn8YJFXesaNZ77H9RDtJLRk/TGnesrA9/0b4WCPoZ9k0nwzRJSg==
   dependencies:
     "@graphql-codegen/cli" "^1.21.7"
     "@graphql-codegen/typescript" "^1.23.0"
