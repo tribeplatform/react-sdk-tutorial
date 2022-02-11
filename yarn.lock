@@ -1986,10 +1986,10 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
-"@tribeplatform/gql-client@*", "@tribeplatform/gql-client@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@tribeplatform/gql-client/-/gql-client-1.0.4.tgz#6e0b147473fdefebe7dd148295df7af74d240e9c"
-  integrity sha512-yI+v8h+W2i4bcOUr9qo6/jv+Z73E4ADHuKjNrlnDYPeWHKFniuR8evbI3gB8a20/NBkiku7JW/Y0FBSxkAbGaw==
+"@tribeplatform/gql-client@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@tribeplatform/gql-client/-/gql-client-1.0.6.tgz#dece81cb153c6ef9387b000870dd8fe660b53283"
+  integrity sha512-L7gxEZ819OCAxAp2gbIWLtpuAwDUbYOvLz9WsK+cSBuuZESmR01K+X2XC3Mfh8XYDcS+MRb6zJH5RXGJ4KyCxg==
   dependencies:
     "@graphql-codegen/cli" "^1.21.7"
     "@graphql-codegen/typescript" "^1.23.0"
@@ -1998,12 +1998,12 @@
     graphql-tag "^2.11.0"
     jwt-decode "^3.1.2"
 
-"@tribeplatform/react-sdk@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@tribeplatform/react-sdk/-/react-sdk-2.0.1.tgz#361886d5aea1bdc421421aea0143cc1713c851e6"
-  integrity sha512-1vLDQGMJAzoQX58dtBXjx12br97NwTYYWbrNBuFxguHYwpCYbI0Ep2aS8qkw9om+q0nTa8gKIiL1P7FyDKGyOA==
+"@tribeplatform/react-sdk@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@tribeplatform/react-sdk/-/react-sdk-2.0.4.tgz#02961339d223be6c02d302cadce382efcdbed69d"
+  integrity sha512-Y/CLX4VBffsi8lUOVzeNB7xSEsA3ZGTLYwIfsDQwVR/K3JXdq0igVYaRAJpiLA0lv8CKwFxr0wojOTu0knmBJw==
   dependencies:
-    "@tribeplatform/gql-client" "*"
+    "@tribeplatform/gql-client" "^1.0.6"
     "@tribeplatform/react-ui-kit" "*"
     immer "^9.0.6"
     lodash.merge "^4.6.2"
