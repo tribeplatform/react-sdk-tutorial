@@ -45,12 +45,12 @@ export const Composer = () => {
                             mappingFields: [
                                 {
                                     key: 'title',
-                                    type: PostMappingTypeEnum.TEXT,
+                                    type: PostMappingTypeEnum.text,
                                     value: JSON.stringify(title)
                                 },
                                 {
                                     key: 'content',
-                                    type: PostMappingTypeEnum.HTML,
+                                    type: PostMappingTypeEnum.html,
                                     value: JSON.stringify(data),
                                 }
                             ]

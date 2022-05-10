@@ -11,7 +11,7 @@ ReactDOM.render(
         <TribeProvider config={{
             baseUrl: 'https://app.tribe.so/graphql',
             networkDomain: 'react-sdk-tutorial.tribeplatform.com',
-            accessToken: localStorage.getItem('apiKey')
+            accessToken: localStorage.getItem('apiKey') as string
         }}>
             <BrowserRouter basename="/react-sdk-tutorial">
                 <App/>
