@@ -23,7 +23,7 @@ export const CommentComposer = ({post}: { post?: Post }) => {
                             publish: true,
                             mappingFields: [{
                                key: 'content',
-                               type: PostMappingTypeEnum.HTML,
+                               type: PostMappingTypeEnum.html,
                                value: JSON.stringify(`<p>${text}</p>`)
                             }],
                         }

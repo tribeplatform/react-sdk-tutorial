@@ -2,7 +2,7 @@ import {Post} from "@tribeplatform/gql-client/types";
 import {ReactComponent as TrashCanIcon} from "../assets/trash_can_icon.svg";
 import React from "react";
 import {useDeletePost} from "@tribeplatform/react-sdk/hooks";
-import {hasScopesPermission} from "@tribeplatform/gql-client/permissions";
+import {hasScopesPermission} from "@tribeplatform/gql-client";
 
 export const DeleteNews = (props: { post: Post }) => {
     const {post} = props

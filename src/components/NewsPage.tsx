@@ -8,7 +8,9 @@ export const NewsPage = () => {
     const params = useParams()
     const postId = params.postId as string
     const {data: post} = usePost({
-        id: postId,
+        variables: {
+            id: postId,
+        },
         fields: {
             replies: {
                 variables: {
