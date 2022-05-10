@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-sdk-tutorial/static/css/main.ea0561d8.css",
-    "main.js": "/react-sdk-tutorial/static/js/main.7cb91eb2.js",
+    "main.js": "/react-sdk-tutorial/static/js/main.b5356bcd.js",
     "static/js/27.f4e8eeea.chunk.js": "/react-sdk-tutorial/static/js/27.f4e8eeea.chunk.js",
     "static/media/trash_can_icon.svg": "/react-sdk-tutorial/static/media/trash_can_icon.b2bfb9cf745c8b49b90375979d87dd31.svg",
     "index.html": "/react-sdk-tutorial/index.html",
@@ -9,6 +9,6 @@
   },
   "entrypoints": [
     "static/css/main.ea0561d8.css",
-    "static/js/main.7cb91eb2.js"
+    "static/js/main.b5356bcd.js"
   ]
 }
